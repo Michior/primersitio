@@ -148,7 +148,7 @@
             <p>¡Gracias por confiar en nosotros!</p>
         </div>
         <div class="footer">
-            <p>&copy; [Año Actual] [Nombre de tu Empresa]. Todos los derechos reservados.</p>
+            <p>&copy; {{now()->format('Y')}} Brujos. Todos los derechos reservados.</p>
             <p><a href="[URL Política de Privacidad]">Política de Privacidad</a> | <a href="[URL Soporte]">Soporte</a></p>
         </div>
     </div>

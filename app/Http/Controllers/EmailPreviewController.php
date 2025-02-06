@@ -15,7 +15,7 @@ class EmailPreviewController extends Controller
             'products.*.name' => ['required', 'string', 'max:50'], #En producto pueden venir dentro de producto, pero lo vamos a tratar de formas diferentes
             'products.*.price' => ['required', 'numeric', 'gt:0'], #el .*. me permite acceder al atributo dentro de ese arreglo para no fregar lo demás
             'products.*.quantity' => ['required', 'integer', 'gte:1'], 
-        ]);
+        ]); 
         
         $request = request()->all(); #.validated(); Me va a traer todos los datos que pasaron la validación, si no no me retorna nada
 
